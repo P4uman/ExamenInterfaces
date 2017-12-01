@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="rootPane" prefHeight="600.0" prefWidth="400.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Pane fx:id="pane1" layoutX="25.0" layoutY="75.0" prefHeight="450.0" prefWidth="350.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 60;">
+         <children>
+            <Text layoutX="114.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pablo Lira">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="img_logo" fitHeight="64.0" fitWidth="58.0" layoutX="146.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
+            <JFXTextField focusColor="#00ad74" labelFloat="true" layoutX="99.0" layoutY="212.0" promptText="Usermail" />
+            <JFXTextField focusColor="#00ad74" labelFloat="true" layoutX="100.0" layoutY="271.0" promptText="Password" />
+            <JFXButton fx:id="btn_signin" layoutX="55.0" layoutY="358.0" prefHeight="38.0" prefWidth="88.0" ripplerFill="#18e8a2" style="-fx-background-color: #00ad74; -fx-background-radius: 20;" text="SIGNIN" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <tooltip>
+                  <Tooltip text="check data and go to main window" />
+               </tooltip>
+            </JFXButton>
+            <JFXButton layoutX="191.0" layoutY="358.0" prefHeight="38.0" prefWidth="88.0" ripplerFill="#18e8a2" style="-fx-background-color: #00ad74; -fx-background-radius: 20;" text="SIGNUP" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </JFXButton>
+            <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="55.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Security-Password.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="29.0" layoutX="55.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@email.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <Pane fx:id="pane2" layoutX="25.0" layoutY="75.0" prefHeight="450.0" prefWidth="350.0" style="-fx-background-color: #EAEAEA; -fx-background-radius: 60;">
+         <children>
+            <Text layoutX="114.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¡Welcome!">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="btn_logout" layoutX="82.0" layoutY="372.0" prefHeight="38.0" prefWidth="187.0" ripplerFill="#18e8a2" style="-fx-background-color: #006A47; -fx-background-radius: 20;" text="LOG OUT" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </JFXButton>
+            <JFXButton layoutX="82.0" layoutY="305.0" prefHeight="38.0" prefWidth="187.0" ripplerFill="#18e8a2" style="-fx-background-color: #00865A; -fx-background-radius: 20;" text="CONFIGURATION" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </JFXButton>
+            <JFXButton layoutX="82.0" layoutY="237.0" prefHeight="38.0" prefWidth="187.0" ripplerFill="#18e8a2" style="-fx-background-color: #00AD74; -fx-background-radius: 20;" text="EDIT PROFILE" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </JFXButton>
+            <JFXButton layoutX="82.0" layoutY="171.0" prefHeight="38.0" prefWidth="187.0" ripplerFill="#18e8a2" style="-fx-background-color: #27B385; -fx-background-radius: 20;" text="NETWORK" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </JFXButton>
+            <JFXButton layoutX="82.0" layoutY="110.0" prefHeight="38.0" prefWidth="187.0" ripplerFill="#18e8a2" style="-fx-border-color: #27B385; -fx-border-radius: 20;" text="NEWSLETTERS">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </JFXButton>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>
